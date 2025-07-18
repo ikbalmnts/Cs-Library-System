@@ -8,10 +8,10 @@ namespace quiz
 {
     internal class Kitap
     {
-        private string ISBN;
-        private string kitapAdi;
-        private string kitapYazari;
-        private double kitapfiyati;
+        public string ISBN { get; }
+        public string kitapAdi { get; }
+        public string kitapYazari { get; }
+        public double kitapfiyati { get; }
 
         public Kitap(string ad, string yazar, string isbn, double fiyat)
         {
@@ -20,11 +20,6 @@ namespace quiz
             this.ISBN = isbn;
             this.kitapfiyati = fiyat;
         }
-
-        public string getAd() => kitapAdi;
-        public string getYazar() => kitapYazari;
-        public string getISBN() => ISBN;
-        public double getFiyat() => kitapfiyati;
 
         public override string ToString()
         {

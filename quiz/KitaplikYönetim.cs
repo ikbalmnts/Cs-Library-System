@@ -17,7 +17,7 @@ namespace quiz
 
         public bool KitapSat(Kitap kitap, Kart kart)
         {
-            double fiyat = kitap.getFiyat();
+            double fiyat = kitap.kitapfiyati;
             bool odemeBasarili = kart.odemeYap(fiyat);
             if (odemeBasarili)
             {

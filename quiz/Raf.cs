@@ -27,7 +27,7 @@ namespace quiz
 
         public Kitap kitapAra(string kitapAdi)
         {
-            return kitaplar.Find(k => k.getAd() == kitapAdi);
+            return kitaplar.Find(k => k.kitapAdi == kitapAdi);
         }
 
         public List<Kitap> getKitaplar()
